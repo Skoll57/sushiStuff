@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 24px;
+}
+
+.logo {
+  width: 61px;
+}
+
+.logo a {
+  height: 100%;
+}
+
+.rights {
+  color: var(--dark-sea);
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.rights a {
+  color: var(--violet);
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  max-width: 160px;
+}
+
+.socials img {
+  width: 45px;
+  height: 45px;
+  transition: width 0.3s;
+  animation: socialShow 1s ease-in-out;
+}
+
+.socials img:hover {
+  width: 48px;
+}
+
+@keyframes socialShow {
+  from {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
